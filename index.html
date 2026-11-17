@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090d">
+  <title>iPhone — Premium Store</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="top">
+  <a class="logo" href="#top"><span class="apple">●</span> iPhone<span class="logo-light">Store</span></a>
+  <button class="menu-toggle" aria-label="Menyuni ochish">☰</button>
+  <nav class="nav">
+    <a href="#home">Bosh sahifa</a><a href="#products">iPhone’lar</a><a href="#about">Biz haqimizda</a><a href="#contact">Aloqa</a>
+  </nav>
+  <a class="nav-cta" href="#products">Katalog <span>↗</span></a>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow"><span></span> YANGI AVLOD TEXNOLOGIYASI</p>
+    <h1>Kelajakni<br><em>qo‘lingizda</em> his qiling.</h1>
+    <p class="hero-desc">Siz izlagan iPhone modellari — zamonaviy dizayn, kuchli imkoniyatlar va premium tajriba bir joyda.</p>
+    <div class="hero-actions"><a class="primary-btn" href="#products">Modellarni ko‘rish <b>↗</b></a><a class="text-link" href="#about">Ko‘proq ma’lumot <span>→</span></a></div>
+    <div class="hero-stats"><div><b>10+</b><small>Tanlangan model</small></div><div><b>100%</b><small>Premium tajriba</small></div><div><b>24/7</b><small>Onlayn buyurtma</small></div></div>
+  </div>
+  <div class="hero-visual">
+    <div class="glow"></div><div class="hero-orbit"></div>
+    <img id="heroPhone" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=900&q=90" alt="Premium smartfon">
+    <div class="floating-tag"><span>✦</span><div><b>Premium collection</b><small>Designed for you</small></div></div>
+    <div class="slide-count"><b id="slideNum">01</b><span>/ 05</span></div>
+  </div>
+  <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 — 05</span></div>
+</section>
+
+<section class="section products-section" id="products">
+  <div class="section-head"><div><p class="eyebrow">BIZNING KATALOG</p><h2>O‘zingizga mos <em>iPhone</em></h2></div><p class="section-note">Har bir model — o‘ziga xos imkoniyat va uslub.</p></div>
+  <div class="filters"><button class="filter active" data-filter="all">Barchasi</button><button class="filter" data-filter="pro">Pro</button><button class="filter" data-filter="standard">Klassik</button></div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<section class="feature" id="about"><div class="feature-image"><img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=1100&q=85" alt="iPhone dizayni"></div><div class="feature-copy"><p class="eyebrow">NIMA UCHUN IPHONESTORE?</p><h2>Texnologiya.<br><em>Soddalik.</em> Uslub.</h2><p>Biz sizga Apple smartfonlari haqida tushunarli ma’lumot va model tanlash uchun qulay katalog taqdim etamiz. Narxlar taxminiy bo‘lib, valyuta kursi va sotuvchiga qarab o‘zgarishi mumkin.</p><a class="text-link" href="#products">Katalogga qaytish <span>→</span></a></div></section>
+
+<section class="contact" id="contact"><p class="eyebrow">BIZ BILAN BOG‘LANING</p><h2>Yangi iPhone’ingiz<br><em>shu yerdan boshlanadi.</em></h2><a class="primary-btn" href="mailto:hello@iphonestore.uz">Bizga yozing <b>↗</b></a></section>
+</main>
+<footer><a class="logo" href="#top">● iPhone<span class="logo-light">Store</span></a><span>© 2026 iPhoneStore. Norasmiy demo do‘kon.</span><a href="#top">Yuqoriga ↑</a></footer>
+
+<div class="modal-backdrop" id="modal" aria-hidden="true">
+  <div class="modal"><button class="modal-close" id="closeModal" aria-label="Yopish">×</button>
+    <div class="modal-intro"><p class="eyebrow">BUYURTMA BERISH</p><h3>Avval ro‘yxatdan <em>o‘ting</em></h3><p>Buyurtmani davom ettirish uchun ma’lumotlaringizni kiriting.</p></div>
+    <form id="registerForm"><input type="hidden" id="selectedProduct"><label>Ismingiz<input required name="name" placeholder="Ismingiz"></label><label>Telefon raqamingiz<input required name="phone" type="tel" placeholder="+998 90 123 45 67"></label><label>Elektron pochta<input required name="email" type="email" placeholder="example@mail.com"></label><button class="primary-btn submit-btn" type="submit">Ro‘yxatdan o‘tish <b>↗</b></button></form>
+    <p class="form-note" id="formNote">Demo shakl: ma’lumotlar serverga yuborilmaydi.</p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body></html>
